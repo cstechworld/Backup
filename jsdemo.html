@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="fnum">
+    <input type="number" id="snum">
+    <button onclick="add()">ADD</button>
+    <p id="demo"></p>
+    <script>
+        function add(){
+            let x , y, z;
+            x = parseInt(document.getElementById("fnum").value);
+            y = parseInt(document.getElementById("snum").value);
+            z = x+y;
+            document.getElementById("demo").innerHTML = "Sum is " + typeof z.toString();
+        }
+        
+    </script>
+</body>
+</html>
